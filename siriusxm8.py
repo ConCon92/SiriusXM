@@ -13,7 +13,7 @@ driver = webdriver.Chrome()
 driver.get("https://player.siriusxm.com/")
 
 sleep(3)
-# this is a change
+
 driver.find_element(by=By.XPATH, value='//*[@id="sxm-welcome-wrapper"]/div/div[1]/div[2]/a').click()
 sleep(3)
 driver.find_element(by=By.XPATH, value='//*[@id="username"]').send_keys("{Username}")
